@@ -176,27 +176,69 @@ animation: top-white 3s linear alternate-reverse infinite;
 
 
 .ex-13-button:hover .ex-13-top-white{
-    animation: top-white13 3s linear alternate infinite;
+    animation: top-white13 2s linear alternate-reverse infinite  ;
 
 }
 
 @keyframes top-white13 {
+
     25% {
         position: absolute;
-        bottom:100%; 
-        left:calc(100% - 60px);
+        top:-10px; 
+        left:calc(100% - 50px);
 
     }
-
-    50%{
+    50% {
         position: absolute;
-        top:100%; 
+        top:calc(100% - 10px);
+        left:calc(100% - 30px);
+        
     }
-    
+
+     75% {
+        position: absolute;
+        top:100%;
+        left:-10px;
+
+    }
+    100% {
+        position: absolute;
+        left:-10px;
+        top: -10px;    
+    }  
 }
+    
+
 
 .ex-13-button:hover .ex-13-bottom-white{
-    animation: bottom-white13 3s linear alternate infinite;
+    animation: bottom-white13 2s linear alternate-reverse infinite ;
+   
+}
 
+@keyframes bottom-white13 {
     
+    25% {
+        position: absolute;
+        bottom:-10px; 
+        right:calc(100% - 50px);
+
+    }
+    50% {
+        position: absolute;
+        bottom:calc(100% - 10px);
+        right:calc(100% - 30px);
+        
+    }
+
+     75% {
+        position: absolute;
+        bottom: calc(100% - 10px);
+        right: -30px;
+
+    }
+    100% {
+        position: absolute;
+        bottom: -10px;
+        right: -10px;    
+    }  
 }
