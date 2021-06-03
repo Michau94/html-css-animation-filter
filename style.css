@@ -100,7 +100,10 @@
 
 .ex-11-icon {
     font-size: 60px;
+}
+.ex-11-icon:hover{
     animation: ciao ease-in-out  infinite 3s;
+
 }
 @keyframes ciao{
     75%{
@@ -169,4 +172,31 @@ animation: top-white 3s linear alternate-reverse infinite;
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: top-white13 3s linear alternate infinite;
+
+}
+
+@keyframes top-white13 {
+    25% {
+        position: absolute;
+        bottom:100%; 
+        left:calc(100% - 60px);
+
+    }
+
+    50%{
+        position: absolute;
+        top:100%; 
+    }
+    
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: bottom-white13 3s linear alternate infinite;
+
+    
 }
